@@ -14,9 +14,11 @@ Built with `Tkinter`, styled with Light/Dark mode, and designed for ethical use.
 - Graphical user interface with tabbed layout
 - Password strength scoring (0 to 4)
 - Feedback on password weaknesses
-- Show/Hide password toggle
-- Dark Mode / Light Mode
-- Wordlist generator with:
+- Show/Hide password toggle (👁)
+- Dark Mode / Light Mode switch (☾/☀)
+- Clear Output button for both tabs to reset inputs/results
+- Status message during wordlist generation for better feedback
+- Wordlist generator supports:
   - Leetspeak substitutions (e.g., a → @, 4)
   - Case variations (lower, upper, title)
   - Custom numbers (birth years, patterns)
