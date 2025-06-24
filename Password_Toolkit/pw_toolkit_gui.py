@@ -14,6 +14,7 @@
 # - Show/Hide password toggle
 # - Dark Mode / Light Mode switch
 # - Exports wordlist to .txt for cracking tools
+# - Clear buttons and generation status indicator
 #
 # ✅ For ethical use only — education, testing, awareness.
 # ---------------------------------------------------------------
@@ -68,6 +69,9 @@ def add_number_variations(word_variants, number_patterns, max_total):
     return result
 
 def generate_wordlist_gui():
+    status_label.config(text="Generating wordlist...", fg="blue")
+    root.update_idletasks()
+
     base_words = words_entry.get().split(',')
     number_patterns = [num.strip() for num in numbers_entry.get().split(',') if num.strip().isdigit()]
     try:
@@ -91,6 +95,8 @@ def generate_wordlist_gui():
             for word in sorted(final_set):
                 f.write(word + "\n")
 
+        status_label.config(text=f"✅ Wordlist generated with {len(final_set)} entries.", fg="green")
+
         answer = messagebox.askyesno("Success", f"Wordlist saved as '{file_path}' with {len(final_set)} entries in your current folder.\n\nDo you want to view it now?")
         if answer:
             os_type = platform.system()
@@ -107,6 +113,18 @@ def generate_wordlist_gui():
                 messagebox.showerror("Error", f"Could not open the file:\n{e}")
     except Exception as e:
         messagebox.showerror("Error", f"Could not save the file:\n{e}")
+
+def clear_wordlist_output():
+    status_label.config(text="")
+    words_entry.delete(0, tk.END)
+    numbers_entry.delete(0, tk.END)
+    limit_entry.delete(0, tk.END)
+    limit_entry.insert(0, "500")
+
+def clear_analyzer_output():
+    password_entry.delete(0, tk.END)
+    score_label.config(text="")
+    feedback_label.config(text="")
 
 # ---------- Password Analyzer Logic ----------
 def check_strength():
@@ -166,7 +184,7 @@ def toggle_theme():
 # ---------- GUI Setup ----------
 root = tk.Tk()
 root.title("Password Toolkit - Analyzer + Generator")
-root.geometry("600x540")
+root.geometry("600x580")
 current_theme = "light"
 
 notebook = ttk.Notebook(root)
@@ -202,7 +220,14 @@ tk.Button(
     bg="#4CAF50",
     fg="black",
     command=check_strength
-).pack(pady=10)
+).pack(pady=5)
+
+tk.Button(
+    analyzer_tab,
+    text="Clear",
+    font=("Segoe UI", 9),
+    command=clear_analyzer_output
+).pack()
 
 score_colors = ["#e53935", "#fb8c00", "#fdd835", "#43a047", "#2e7d32"]
 score_label = tk.Label(analyzer_tab, text="", font=("Segoe UI", 12, "bold"), bg="#f2f2f2")
@@ -230,7 +255,12 @@ limit_entry = tk.Entry(generator_tab, width=20, font=("Segoe UI", 10))
 limit_entry.insert(0, "500")
 limit_entry.pack(pady=5)
 
-tk.Button(generator_tab, text="Generate Wordlist", font=("Segoe UI", 10), bg="#4CAF50", fg="white", command=generate_wordlist_gui).pack(pady=15)
+tk.Button(generator_tab, text="Generate Wordlist", font=("Segoe UI", 10), bg="#4CAF50", fg="white", command=generate_wordlist_gui).pack(pady=5)
+
+tk.Button(generator_tab, text="Clear", font=("Segoe UI", 9), command=clear_wordlist_output).pack()
+
+status_label = tk.Label(generator_tab, text="", font=("Segoe UI", 9), fg="green", bg="#f2f2f2")
+status_label.pack(pady=5)
 
 # ---------- Theme Toggle ----------
 toggle_btn = tk.Button(root, text="☾  Dark Mode", font=("Segoe UI", 9), command=toggle_theme, width=15)
