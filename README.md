@@ -39,7 +39,7 @@ python password_toolkit_gui.py
 
 ---
 
-##📁 Project Structure
+## 📁 Project Structure
 
 📁 Password_Toolkit/
 ├── password_toolkit_gui.py              # Combined GUI (tabs)
