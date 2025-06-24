@@ -26,8 +26,14 @@ Built with `Tkinter`, styled with Light/Dark mode, and designed for ethical use.
 
 ## 📦 Installation
 
-Install the required Python package:
 
+### 1. Clone the repository or download the `.py` file
+```bash
+git clone https://github.com/yourusername/password-toolkit.git
+cd password-toolkit
+```
+
+### 2. Install the required Python package:
 ```bash
 pip install zxcvbn
 ```
