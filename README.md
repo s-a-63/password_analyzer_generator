@@ -42,7 +42,7 @@ pip install zxcvbn
 
 ## ▶️ Running the Toolkit
 ```bash
-python password_toolkit_gui.py
+python pw_toolkit_gui.py
 ```
 
 ---
