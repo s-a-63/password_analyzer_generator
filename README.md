@@ -32,7 +32,7 @@ Built with `Tkinter`, styled with Light/Dark mode, and designed for ethical use.
 ### 1. Clone the repository or download the `.py` file
 ```bash
 git clone https://github.com/s-a-63/password_analyzer_generator.git
-cd password_analyzer_generator
+cd Password_Toolkit
 ```
 
 ### 2. Install the required Python package:
