@@ -51,7 +51,7 @@ python pw_toolkit_gui.py
 
 ```
 📁 Password_Toolkit/
-├── password_toolkit_gui.py              # Combined GUI (tabs)
+├── pw_toolkit_gui.py              # Combined GUI (tabs)
 ├── requirements.txt                     # Lists zxcvbn
 ├── custom_wordlist.txt                  # Output wordlist
 ├── README.md                            # This file
