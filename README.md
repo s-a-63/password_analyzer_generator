@@ -1,4 +1,10 @@
-# 🔐 Password Toolkit: Strength Analyzer + Wordlist Generator
+# Password Toolkit: Strength Analyzer + Wordlist Generator
+
+## Overview
+
+Weak passwords remain one of the most common causes of account compromise and credential-based attacks. This project combines password strength evaluation and custom wordlist generation into a single GUI-based toolkit for security awareness, password analysis, and controlled security testing.
+
+The toolkit uses the zxcvbn password estimation library to analyze password strength and generates customized wordlists using common password mutation techniques such as leetspeak substitutions, case variations, and numeric patterns.
 
 A complete Python GUI application combining:
 
@@ -9,7 +15,7 @@ Built with `Tkinter`, styled with Light/Dark mode, and designed for ethical use.
 
 ---
 
-## 🚀 Features
+## Features
 
 - Graphical user interface with tabbed layout
 - Password strength scoring (0 to 4)
@@ -26,7 +32,15 @@ Built with `Tkinter`, styled with Light/Dark mode, and designed for ethical use.
 
 ---
 
-## 📦 Installation
+## Tech Stack
+
+- Python
+- Tkinter
+- zxcvbn
+
+---
+
+## Installation
 
 
 ### 1. Clone the repository or download the `.py` file
@@ -40,14 +54,14 @@ cd Password_Toolkit
 pip install zxcvbn
 ```
 
-## ▶️ Running the Toolkit
+## Running the Toolkit
 ```bash
 python pw_toolkit_gui.py
 ```
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 📁 Password_Toolkit/
@@ -64,12 +78,29 @@ python pw_toolkit_gui.py
 
 ---
 
-## 🛡️ Ethical Use Notice
+## Challenges Faced
+
+- Designing a responsive Tkinter GUI with tab-based navigation
+- Managing multiple password mutation combinations efficiently
+- Maintaining usability across Light and Dark mode themes
+- Generating meaningful password feedback using zxcvbn outputs
+
+---
+
+## Limitations
+
+- Password strength analysis depends on the zxcvbn estimation model
+- Generated wordlists are rule-based and do not include probabilistic attack models
+- The toolkit is intended for educational and authorized security testing only
+- Extremely large mutation combinations may increase generation time and output size
+
+---
+
+## Ethical Use Notice
 This tool is for educational, ethical, and awareness purposes only.
 Do not use it for unauthorized access or illegal activities.
 
 ---
 
-## 👩‍💻 Author
-Sahiti M
-© 2025 | All rights reserved
+## Author
+Sahiti M | All rights reserved
