@@ -94,7 +94,7 @@ python pw_toolkit_gui.py
 
 ### Generated Custom Wordlist
 
-<img src="Password_Toolkit/screenshots/generated_wordlist.png" width="700" height="500"/>
+<img src="Password_Toolkit/screenshots/generated_wordlist.png" width="700" height="700"/>
 
 ---
 
