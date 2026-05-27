@@ -1,4 +1,4 @@
-# Password Toolkit: Strength Analyzer + Wordlist Generator
+# Password Security Toolkit: Strength Analyzer + Wordlist Generator
 
 ## Overview
 
