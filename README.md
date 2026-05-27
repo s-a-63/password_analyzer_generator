@@ -78,6 +78,26 @@ python pw_toolkit_gui.py
 
 ---
 
+## Screenshots
+
+### Password Strength Analyzer
+
+![Password Analyzer](screenshots/pw_analyzer.png)
+
+---
+
+### Wordlist Generator
+
+![Wordlist Generator](screenshots/wordlist_generator.png)
+
+---
+
+### Generated Custom Wordlist
+
+![Generated Wordlist](screenshots/generated_wordlist.png)
+
+---
+
 ## Challenges Faced
 
 - Designing a responsive Tkinter GUI with tab-based navigation
