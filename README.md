@@ -4,14 +4,14 @@
 
 Weak passwords remain one of the most common causes of account compromise and credential-based attacks. This project combines password strength evaluation and custom wordlist generation into a single GUI-based toolkit for security awareness, password analysis, and controlled security testing.
 
-The toolkit uses the zxcvbn password estimation library to analyze password strength and generates customized wordlists using common password mutation techniques such as leetspeak substitutions, case variations, and numeric patterns.
+The toolkit uses the zxcvbn password estimation library to evaluate password strength and generates customized wordlists using common password mutation techniques such as leetspeak substitutions, case variations, and numeric patterns.
 
-A complete Python GUI application combining:
+Built using Python and Tkinter, the application features a tabbed GUI interface with Light/Dark mode support for an improved user experience.
 
-1. **Password Strength Analyzer** — evaluates passwords using zxcvbn
-2. **Custom Wordlist Generator** — creates password lists with leetspeak, case variants, and number patterns
+### Modules Included
 
-Built with `Tkinter`, styled with Light/Dark mode, and designed for ethical use.
+- **Password Strength Analyzer** — Evaluates password strength and provides feedback using zxcvbn
+- **Custom Wordlist Generator** — Generates password wordlists using leetspeak, case variations, and numeric patterns
 
 ---
 
