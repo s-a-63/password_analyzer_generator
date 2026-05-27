@@ -82,20 +82,19 @@ python pw_toolkit_gui.py
 
 ### Password Strength Analyzer
 
-![Password Analyzer](screenshots/pw_analyzer.png)
+<img src="./screenshots/pw_analyzer.png" width="700"/>
 
 ---
 
 ### Wordlist Generator
 
-![Wordlist Generator](screenshots/wordlist_generator.png)
+<img src="./screenshots/wordlist_generator.png" width="700"/>
 
 ---
 
 ### Generated Custom Wordlist
 
-![Generated Wordlist](screenshots/generated_wordlist.png)
-
+<img src="./screenshots/generated_wordlist.png" width="700"/>
 ---
 
 ## Challenges Faced
