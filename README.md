@@ -82,7 +82,7 @@ python pw_toolkit_gui.py
 
 ### Password Strength Analyzer
 
-<img src="Password_Toolkit/screenshots/pw_analyzer.png" width="700"/>
+<img src="Password_Toolkit/screenshots/pw_analyzer.png" width="700" height="500"/>
 
 ---
 
