@@ -88,13 +88,13 @@ python pw_toolkit_gui.py
 
 ### Wordlist Generator
 
-<img src="Password_Toolkit/screenshots/wordlist_generator.png" width="700"/>
+<img src="Password_Toolkit/screenshots/wordlist_generator.png" width="700" height="500"/>
 
 ---
 
 ### Generated Custom Wordlist
 
-<img src="Password_Toolkit/screenshots/generated_wordlist.png" width="700"/>
+<img src="Password_Toolkit/screenshots/generated_wordlist.png" width="700" height="500"/>
 
 ---
 
